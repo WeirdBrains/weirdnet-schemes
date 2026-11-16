@@ -1,0 +1,26 @@
+[package]
+name = "weirdnet-schemes"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+authors = ["m3talsmith <m3talsmith@gmail.com>"]
+license = "BSD-3-Clause"
+repository = "https://github.com/WeirdBrains/weirdnet-schemes"
+description = "The Weirdnet URL scheme registry: signed prefix and scheme records, the WeirdBrains-signed canonical list with reserved weirdnet prefixes, a local resolver with pins and conflict rules, install hints, and OS handler registration for app schemes."
+readme = "README.md"
+keywords = ["url-scheme", "registry", "deep-links", "weirdnet", "p2p"]
+categories = ["network-programming", "os"]
+include = ["src/**", "README.md", "LICENSE", "CHANGELOG.md", "SECURITY.md"]
+
+[dependencies]
+libp2p-identity = { version = "0.3", features = ["ed25519"] }
+sha2 = "0.10"
+base64 = "0.22"
+hex = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+
+[dev-dependencies]
+libp2p-identity = { version = "0.3", features = ["ed25519", "rand"] }
+tempfile = "3"
