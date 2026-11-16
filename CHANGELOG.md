@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-16
+
 ### Added
 
 - Signed prefix and scheme records, with reserved `weirdnet…` prefixes and transfers.
@@ -13,4 +15,5 @@ All notable changes to this project are documented here. The format follows
 - The resolver: pins, the canonical list, installed apps, then the user's choice.
 - App links (`join/`, `answer/`, resources), install hints, and OS handler registration.
 
-[Unreleased]: https://github.com/WeirdBrains/weirdnet-schemes/compare/c6ccfeeac3e8144df6e6906661ab439e65d2b17a...HEAD
+[Unreleased]: https://github.com/WeirdBrains/weirdnet-schemes/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/WeirdBrains/weirdnet-schemes/compare/c6ccfeeac3e8144df6e6906661ab439e65d2b17a...v0.1.0
