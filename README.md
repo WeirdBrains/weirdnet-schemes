@@ -4,14 +4,14 @@ The URL scheme registry every Weirdnet app shares, so a `weirdnet-<app>://` link
 same thing on every device and to every app.
 
 - **Names** ([`names`]): every app registers a prefix; its schemes are the prefix or
-  `prefix-…`. Prefixes starting with `weirdnet` are reserved for WeirdBrains; first-party
+  `prefix-…`. Prefixes starting with `weirdnet` are reserved for [WeirdBrains](https://weirdbrains.com); first-party
   apps use `weirdnet-<app>` (`weirdnet-morph`, `weirdnet-muninn`). Standard schemes
   (`https`, `file`, `mailto`, …) can't be claimed. `weirdnet://` is internal only: never
   registered with the OS and never resolved to an app.
 - **Records** ([`records`]): a [`PrefixRecord`] and a [`SchemeRecord`] (scheme, prefix,
   app id, publisher key, display name, capabilities, install hints, `seq`, expiry,
   withdrawal), each signed by the publisher's Ed25519 key over its exact JSON. Reserved
-  prefixes also carry the WeirdBrains root signature and are published only on the
+  prefixes also carry the [WeirdBrains](https://weirdbrains.com) root signature and are published only on the
   **canonical list**, which the root key signs as a whole. A prefix moves to a new publisher
   only with a transfer signature from the previous one; the root key rotates by a record
   both the old and the new key sign.
@@ -30,7 +30,7 @@ same thing on every device and to every app.
   and the Android intent filter, for an app's own schemes. All of them refuse
   `weirdnet://`.
 
-The WeirdBrains root key is held by m3talsmith and used through
+The [WeirdBrains](https://weirdbrains.com) root key is held by m3talsmith and used through
 [`weirdnetctl`](https://github.com/WeirdBrains/weirdnetctl), which signs the reserved
 prefixes and the canonical list; apps ship its public key as their trust anchor.
 
